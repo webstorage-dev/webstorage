@@ -1,0 +1,26 @@
+{
+  "name": "@webstorage/webstorage",
+  "version": "0.0.1",
+  "description": "LocalStorage synced to the cloud",
+  "license": "MIT",
+  "author": "Tate <tatethurston@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/webstorage-dev/webstorage"
+  },
+  "type": "module",
+  "sideEffects": false,
+  "types": "index.d.ts",
+  "dependencies": {},
+  "keywords": [],
+  "main": "./cjs/index.js",
+  "module": "./index.js",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "import": "./index.js",
+      "module": "./index.js",
+      "default": "./cjs/index.js"
+    }
+  }
+}

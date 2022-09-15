@@ -10,7 +10,7 @@
   },
   "type": "module",
   "scripts": {
-    "build:commonjs": "esbuild src/index.ts --bundle --platform=node --outfile=dist/index.cjs",
+    "build:commonjs": "tsc --module commonjs --outDir ./dist/cjs",
     "build:module": "tsc",
     "clean": "rm -rf dist",
     "lint": "npm run typecheck && prettier --check . && prettier-package-json --list-different '{,example/,}package.json' && eslint .",
@@ -22,6 +22,9 @@
     "test": "jest",
     "test:ci": "jest --coverage",
     "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@types/react": "^18.0.19"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.18.2",

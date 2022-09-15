@@ -1,6 +1,6 @@
 {
   "name": "@webstorage/webstorage",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "LocalStorage synced to the cloud",
   "license": "MIT",
   "author": "Tate <tatethurston@gmail.com>",
@@ -10,7 +10,6 @@
   },
   "type": "module",
   "sideEffects": false,
-  "types": "index.d.ts",
   "dependencies": {},
   "keywords": [],
   "main": "./cjs/index.js",
@@ -21,6 +20,11 @@
       "import": "./index.js",
       "module": "./index.js",
       "default": "./cjs/index.js"
+    },
+    "./adapters/react": {
+      "import": "./adapters/react.js",
+      "module": "./adapters/react.js",
+      "default": "./cjs/adapters/react.js"
     }
   }
 }

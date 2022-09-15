@@ -1,6 +1,6 @@
 {
   "name": "@webstorage/webstorage",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "LocalStorage synced to the cloud",
   "license": "MIT",
   "author": "Tate <tatethurston@gmail.com>",

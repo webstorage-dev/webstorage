@@ -75,10 +75,7 @@ export function useWebStorage<Key extends string>(
     storage.on("change", onChange);
     return () => storage.off("change", onChange);
   }, []);
-  const setStorage = useCallback(
-    () => (val: unknown) => storage.set(key, val),
-    []
-  );
+  const setStorage = useCallback((val: unknown) => storage.set(key, val), []);
 
   return [state, setStorage];
 }

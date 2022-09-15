@@ -13,32 +13,38 @@ type Storage = {
 
 const useAppStorage = useWebStorage as UseWebStorage<Storage>;
 
-function App() {
+function Main() {
   const [val, setVal] = useState("");
   const [language, setLanguage] = useAppStorage("language");
   const [count, setCount] = useAppStorage("count");
 
   return (
+    <div>
+      <p>Key: language</p>
+      <p>Value: {language}</p>
+      <p>Key: count</p>
+      <p>Value: {count}</p>
+      <form
+        onSubmit={(e) => {
+          setLanguage(val);
+          setCount(count + 1);
+          e.preventDefault();
+        }}
+      >
+        <input
+          value={val}
+          onChange={(e) => setVal(e.currentTarget.value)}
+        ></input>
+      </form>
+    </div>
+  );
+}
+
+function App() {
+  return (
     <WebStorage account="tatetest" store="123">
       <h1>WebStorage Example</h1>
-      <div>
-        <p>Key: language</p>
-        <p>Value: {language}</p>
-        <p>Key: count</p>
-        <p>Value: {count}</p>
-        <form
-          onSubmit={(e) => {
-            e.preventDefault();
-            setLanguage(val);
-            setCount(count + 1);
-          }}
-        >
-          <input
-            value={val}
-            onChange={(e) => setVal(e.currentTarget.value)}
-          ></input>
-        </form>
-      </div>
+      <Main />
     </WebStorage>
   );
 }

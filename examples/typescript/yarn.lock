@@ -1620,9 +1620,10 @@
   "resolved" "https://registry.npmjs.org/@webpack-cli/serve/-/serve-1.7.0.tgz"
   "version" "1.7.0"
 
-"@webstorage/webstorage@file:../../dist":
-  "resolved" "file:../../dist"
-  "version" "0.0.1"
+"@webstorage/webstorage@0.0.2":
+  "integrity" "sha512-V6soPtl2I41H0XEV21OnLdUEiPU8pQ5dVMyQQePv6f2viKO3WSqxDYKhXPaH5z8EPW6cMAyiXIqvAM2ntSTYig=="
+  "resolved" "https://registry.npmjs.org/@webstorage/webstorage/-/webstorage-0.0.2.tgz"
+  "version" "0.0.2"
 
 "@xtuc/ieee754@^1.2.0":
   "integrity" "sha512-DX8nKgqcGwsc0eJSqYt5lwP4DH5FlHnmuWWBRy7X0NcaGR0ZtuyeESgMwTYVEtxmsNGY+qit4QYT/MIYTOTPeA=="

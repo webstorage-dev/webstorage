@@ -1,6 +1,8 @@
-!**/dist/index.html
-**/dist/*
+dist
+**/public/index.production.js
+**/public/index.production.js.LICENSE.txt
 coverage
 node_modules
 todo.txt
 tsconfig.tsbuildinfo
+
